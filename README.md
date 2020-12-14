@@ -1,10 +1,14 @@
 # rock-paper-scissors
 
-Rock Paper Scissors gameagainst the computer. This project is part of The Odin Project's course and it's divided in two parts.
+Rock Paper Scissors game against the computer. This project is part of The Odin Project's course and it's divided in two parts.
 
 
 ## First Part
-* Javascript basic concepts and sintaxe
-* Loops
+Game playable through the browser console.
+
+* Javascript basic concepts and syntax
+* For and while loops
 * Conditional statements
-* Basic user interaction
+* Basic user interaction with prompt
+* Functions
+* Debugging and error checking with DevTools
