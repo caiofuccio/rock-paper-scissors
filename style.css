@@ -1,0 +1,156 @@
+/* Initial Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page and Title */
+.game {
+  height: 100vh;
+  background-color: #43767e;
+  font-family: "Rubik", sans-serif;
+  color: black;
+}
+
+.game h1 {
+  font-size: 55px;
+  height: 20vh;
+  pointer-events: none;
+  text-align: center;
+  line-height: 20vh;
+  text-transform: uppercase;
+}
+
+/* Intro */
+.intro {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro button {
+  margin-top: 12vh;
+  width: 150px;
+  height: 150px;
+  font-family: inherit;
+  font-size: 18px;
+  background: none;
+  border: black solid 5px;
+  border-radius: 50%;
+  background-color: #551d36;
+  cursor: pointer;
+  outline: none;
+}
+
+.intro button:hover {
+  font-size: inherit;
+  transform: scale(1.25);
+  border: white solid 5px;
+}
+
+.intro p {
+  height: 15vh;
+  width: 55vw;
+  text-align: center;
+  padding-top: 5vh;
+  font-size: 18px;
+}
+
+/* Match */
+.match {
+  position: absolute;
+  top: 22vh;
+  left: 50%;
+  width: 60vw;
+  margin-left: -30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.score {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 8vh;
+  font-size: 22px;
+}
+
+.player-score,
+.computer-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-score p,
+.computer-score p {
+  margin-top: 1.5vh;
+}
+
+.result {
+  font-size: 20px;
+  text-align: center;
+}
+
+.hands {
+  width: 60vw;
+  margin-top: 7vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rock-hand,
+.paper-hand,
+.scissors-hand {
+  width: 180px;
+  height: 260px;
+  border: black solid 4px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5a5780;
+}
+
+.rock-hand:hover,
+.paper-hand:hover,
+.scissors-hand:hover {
+  transform: scale(1.2);
+}
+
+.hands img {
+  padding-bottom: 30px;
+}
+
+.hands button {
+  font-family: inherit;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  border-radius: 30px;
+  padding-top: 200px;
+  padding-left: 12px;
+}
+
+/* Screen Transitions */
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}

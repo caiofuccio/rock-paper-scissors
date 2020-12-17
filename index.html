@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="game">
       <h1>Rock Paper Scissors</h1>
 
-      <div class="intro">
+      <div class="intro fadeOut">
         <button>Let's Play!</button>
         <p>
           You'll be playing 5 rounds against the computer. Choose between rock,
@@ -33,9 +42,18 @@
         <div class="result">
           <h3>Choose a hand</h3>
           <div class="hands">
-            <img src="/assets/rock.svg" alt="Rock" />
-            <img src="/assets/paper.svg" alt="Paper" />
-            <img src="/assets/scissors.svg" alt="Scissors" />
+            <div class="rock-hand">
+              <img src="/assets/rock.svg" alt="Rock" />
+              <button>rock</button>
+            </div>
+            <div class="paper-hand">
+              <img src="/assets/paper.svg" alt="Paper" />
+              <button>paper</button>
+            </div>
+            <div class="scissors-hand">
+              <img src="/assets/scissors.svg" alt="Scissors" />
+              <button>scissors</button>
+            </div>
           </div>
         </div>
       </div>
