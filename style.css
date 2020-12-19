@@ -15,10 +15,10 @@
 
 .game h1 {
   font-size: 55px;
-  height: 20vh;
+  height: 16vh;
   pointer-events: none;
   text-align: center;
-  line-height: 20vh;
+  line-height: 16vh;
   text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@
 /* Match */
 .match {
   position: absolute;
-  top: 22vh;
+  top: 19vh;
   left: 50%;
   width: 60vw;
   margin-left: -30vw;
@@ -71,7 +71,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  transition: opacity 0.5s linear 0.7s;
+  transition: opacity 0.5s linear 0.5s;
 }
 
 .score {
@@ -79,7 +79,7 @@
   width: 50vw;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 8vh;
+  margin-bottom: 2vh;
   font-size: 22px;
 }
 
@@ -93,6 +93,16 @@
 .player-score p,
 .computer-score p {
   margin-top: 1.5vh;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 4vh;
 }
 
 .result {
@@ -144,6 +154,61 @@
   border-radius: 30px;
   padding-top: 200px;
   padding-left: 12px;
+}
+
+/* Game Over */
+.gameover {
+  position: absolute;
+  top: 19vh;
+  left: 50%;
+  width: 60vw;
+  margin-left: -30vw;
+  transition: opacity 0.5s linear 0.7s;
+}
+
+.winner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gameover h2 {
+  font-size: 44px;
+  height: 16vh;
+  pointer-events: none;
+  text-align: center;
+  line-height: 16vh;
+  text-transform: uppercase;
+  margin-top: 4vh;
+}
+
+.gameover p {
+  font-size: 26px;
+  height: 4vh;
+  line-height: 4vh;
+  pointer-events: none;
+  text-align: center;
+}
+
+.gameover button {
+  margin-top: 15vh;
+  width: 150px;
+  height: 150px;
+  font-family: inherit;
+  font-size: 18px;
+  background: none;
+  border: black solid 5px;
+  border-radius: 50%;
+  background-color: #551d36;
+  cursor: pointer;
+  outline: none;
+}
+
+.gameover button:hover {
+  font-size: inherit;
+  transform: scale(1.25);
+  border: white solid 5px;
 }
 
 /* Screen Transitions */
