@@ -29,6 +29,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  transition: opacity 0.5s linear;
 }
 
 .intro button {
@@ -70,6 +71,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  transition: opacity 0.5s linear 0.7s;
 }
 
 .score {
